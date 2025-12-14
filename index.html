@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Wedding Roulette</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <div class="glass-overlay"></div>
+
+    <main id="game-container" class="game-container fade-in">
+        <nav class="game-nav">
+            <button id="btn-home" class="nav-icon" title="Restart Game">⌂</button>
+            <button id="btn-back" class="nav-icon" title="Go Back">↩</button>
+        </nav>
+        <header class="game-header">
+            <h1>Royal Wedding Roulette</h1>
+            <p class="subtitle">You command the cast. Fate commands the chaos.</p>
+        </header>
+
+        <section id="scene-display" class="scene-display">
+            <!-- Dynamic Content -->
+            <p id="scene-text" class="scene-text">Loading...</p>
+        </section>
+
+        <section id="interaction-area" class="interaction-area">
+            <h2 id="prompt-text" class="prompt-text">Loading...</h2>
+            <div id="choices-container" class="choices-container">
+                <!-- Buttons injected via JS -->
+            </div>
+        </section>
+
+        <div id="game-status" class="game-status">
+            Turn <span id="turn-number">1</span>/5
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
